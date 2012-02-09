@@ -1,0 +1,16 @@
+gcc -I../include copy.c ../lib/error.c; time -p ./a.out < tmp > /dev/null
+
+BUFFSIZE: 4096
+real 0.11
+user 0.01
+sys 0.09
+
+BUFFSIZE: 32
+real 7.52
+user 1.64
+sys 5.85
+
+BUFFSIZE: 32768
+real 0.05
+user 0.00
+sys 0.04

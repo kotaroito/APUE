@@ -12,7 +12,7 @@ int main(int argc, char* argv[])
     char buff[BUFFSIZE];
     int i;
 
-    fd = open("/tmp/kotaro", (O_WRONLY | O_CREAT));
+    fd = open("/tmp/kotaro", (O_WRONLY | O_CREAT | O_APPEND) );
     for (i = 0; i < 1000000; i++ ) {
         sprintf(buff, "%d\r\n", getpid());
         write(fd, buff, strlen(buff)); 

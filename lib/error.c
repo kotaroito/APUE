@@ -4,7 +4,7 @@
 #include <string.h>
 #include <errno.h>
 
-#include "error.h";
+#include "error.h"
 
 #define MAXLINE 1000
 

@@ -1,1 +1,1 @@
-gcc -I include/ -L lib [target file]
+gcc -Iinclude/ lib/error.c {target.c}
